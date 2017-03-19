@@ -26,6 +26,7 @@ module TastyBeverage
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.app_generators.scaffold_controller = :scaffold_controller
     # The following 4 lines of middleware ensure
     # rails-API-mode compatability with the ActiveAdmin gem.
     config.middleware.use Rack::MethodOverride
